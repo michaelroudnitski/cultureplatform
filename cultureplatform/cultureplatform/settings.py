@@ -54,7 +54,7 @@ ROOT_URLCONF = 'cultureplatform.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['main/templates', 'users/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
