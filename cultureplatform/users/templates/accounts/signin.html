@@ -41,30 +41,21 @@
                                         <div class="form-group">
                                             <input type="username" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Username..." for="usernameInput" method="GET">
+                                                placeholder="username" name="username">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="passwordInput" for="pswrd">
+                                                id="exampleInputPassword" placeholder="password" name="password1">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
-                                            </div>
-                                        </div>
-                                        <a class="btn btn-primary btn-user btn-block"
-                                            onClick="check(this.form); return false;" href="#" value="Login">
-                                            Login
-                                        </a>
+                                        <input type="submit" onClick="check(this.form); return false;" value="Login" class="btn btn-primary btn-user btn-block">
+                                        </input>
                                     </form>
                                     <hr>
                                     <div class="text-center pt-5">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        <a href="forgot-password.html">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <a href="{% url 'signup' %}">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
