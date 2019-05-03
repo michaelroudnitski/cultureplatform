@@ -237,6 +237,14 @@ label {
   margin-bottom: 0.5rem;
 }
 
+.bg-login-image {
+  background: url("images/login.jpg");
+  background-size: 600x800;
+  background-position: center;
+  background-size: cover;
+}
+
+
 button {
   border-radius: 0;
 }
@@ -9240,6 +9248,10 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
+}
+
+.text-black {
+  color: #000 !important;
 }
 
 .text-green-muted {
