@@ -5,3 +5,6 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'index.html')
+
+def learn(reques):
+    return render(request, 'learn.html')
