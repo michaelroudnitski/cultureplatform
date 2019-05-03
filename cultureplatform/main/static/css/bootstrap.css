@@ -238,7 +238,7 @@ label {
 }
 
 .bg-login-image {
-  background: url("images/login.jpg");
+  background: url("../images/login.jpg");
   background-size: 600x800;
   background-position: center;
   background-size: cover;
