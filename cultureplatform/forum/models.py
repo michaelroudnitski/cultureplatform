@@ -10,6 +10,9 @@ class Forum(models.Model):
 
 class Comment(models.Model):
     content = models.TextField()
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
     date_posted = models.DateField()
-    
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+
+class Video(models.Model):
+    videoID = models.CharField(max_length=300)
+    forum = models.ForeignKey(Forum, on_delete=models.CASCADE)
