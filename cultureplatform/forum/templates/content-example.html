@@ -2,72 +2,97 @@
 
 {% block body %}
 
-    <div class="container pt-4">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand" href="index.html">Apprendre</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="{% url 'learn' %}">Learn</a></li>
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="#">-</a></li>
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="/users/signin">Login/Sign Up</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  
-  <div class="page-content">
-    <div class="da-section bg-light" id="services">
-      <div class="da-services">
-        <div class="container text-center">
-          <div class="h3 pb-5 text-primary text-center" data-aos="fade-bottom">TOPIC: IS IT ETHICAL TO EAT MEAT?</div>
-          <div class="row">
-            <div class="col-lg-12 col-md-6 px-3">
-              <div class="card mb-9">
-                <div class="p-5">
-                  <div class="card-body py-3" data-aos="zoom-in" data-aos-duration="500">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kNz82r5nyUw"></iframe>
-                    </div>
+<div class="container pt-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand"
+      href="index.html">Apprendre</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav"
+      aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link smooth-scroll" href="{% url 'learn' %}">Learn</a></li>
+        <li class="nav-item"><a class="nav-link smooth-scroll" href="#">-</a></li>
+        <li class="nav-item"><a class="nav-link smooth-scroll" href="/users/signin">Login/Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="page-content">
+  <div class="da-section bg-light" id="services">
+    <div class="da-services">
+      <div class="container text-center">
+        <div class="h3 pb-5 text-primary text-center" data-aos="fade-bottom">TOPIC: IS IT ETHICAL TO EAT MEAT?</div>
+        <div class="row">
+          <div class="col-lg-12 col-md-6 px-3">
+            <div class="card mb-9">
+              <div class="p-5">
+                <div class="card-body py-3" data-aos="zoom-in" data-aos-duration="500">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kNz82r5nyUw"></iframe>
                   </div>
-                  <div class="pt-4">
-                    
-                    Some people argue that animals have a distinctly different moral standing from humans. Eating an animal in the same bucket as cutting a flower from his garden, explaining that “although animals experience pain as it is physically bad, their experience of it is not in itself morally bad. They are harmed in feeling pain, but this harm is not of a moral kind … Since animals lack moral status, it is not wrong to eat meat, even if this is not essential to nutrition.”
-                    Others believe that the pain and suffering animals endure is not similar to was is felt by humans and thus making it ethical to eat meat for sustenance.
-                  </div>
+                </div>
+                <div class="pt-4">
+
+                  Some people argue that animals have a distinctly different moral standing from humans. Eating an
+                  animal in the same bucket as cutting a flower from his garden, explaining that “although animals
+                  experience pain as it is physically bad, their experience of it is not in itself morally bad. They are
+                  harmed in feeling pain, but this harm is not of a moral kind … Since animals lack moral status, it is
+                  not wrong to eat meat, even if this is not essential to nutrition.”
+                  Others believe that the pain and suffering animals endure is not similar to was is felt by humans and
+                  thus making it ethical to eat meat for sustenance.
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="col-lg-12 col-md-6 p-3">
+            <div class="card mb-9">
+              <div class="p-5">
+                <div class="form-group">
+                  <!-- <label for="comment">Comment:</label> -->
+                  <textarea class="form-control" rows="5" placeholder="share your thoughts" id="comment"></textarea>
+                  <!-- <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time> -->
+                </div>
+                <div class="container text-left">
+                  <p><button type="button" class="btn btn-primary">Post</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+
   </div>
+</div>
 </div>
 </div>
 <footer class="bg-secondary da-section">
-<div class="container text-white">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="h2">Reach us at</div>
-      <p class="mb-0">info@apprendre.com</p>
-    </div>
-    <div class="col-md-4">
-      <div class="h6 pb-2">Follow Us</div>
-      <ul>
-        <li><a class="da-social-link text-green-muted" href="#">Twitter</a></li>
-        <li><a class="da-social-link text-green-muted" href="#">Facebook</a></li>
-        <li><a class="da-social-link text-green-muted" href="#">Instagram</a></li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <div class="h6 pb-2">Copyright</div>
-      <p>&copy; 2019 Apprendre. All rights reserved.</p>
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="h2">Reach us at</div>
+        <p class="mb-0">info@apprendre.com</p>
+      </div>
+      <div class="col-md-4">
+        <div class="h6 pb-2">Follow Us</div>
+        <ul>
+          <li><a class="da-social-link text-green-muted" href="#">Twitter</a></li>
+          <li><a class="da-social-link text-green-muted" href="#">Facebook</a></li>
+          <li><a class="da-social-link text-green-muted" href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="h6 pb-2">Copyright</div>
+        <p>&copy; 2019 Apprendre. All rights reserved.</p>
+      </div>
     </div>
   </div>
-</div>
 </footer>
 <div id="scrolltop">
-<button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
+  <button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
 </div>
 
 {% endblock %}
