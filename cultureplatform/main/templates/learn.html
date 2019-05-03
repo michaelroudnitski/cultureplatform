@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Apprendre</title>
-    <meta name="description" content="A Digital Agency Website landing page template built by TemplateFlip.com"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
-    <link href="css/ekko-lightbox.css" rel="stylesheet">
-    <link href="styles/bootstrap.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-  </head>
-  <body id="top">
-      <div class="container pt-4">
+{% extends 'base.html'%}
+
+{% block body %}
+           <div class=" container pt-4">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand" href="index.html">Apprendre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
@@ -55,7 +42,7 @@
             <div class="col-lg-4 col-md-6">
               <div class="card mb-4">
                 <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1000">
-                  <div class="text-primary"><i class="pb-3 fas fa-video fa-3x"></i>
+                  <div class="text-primary"><i class="pb-4 fas fa-video fa-3x"></i>
                     <p class="font-weight-bold text-black">Videos</p>
                   </div>
                   <p><button type="button" class="btn btn-outline-primary"><a href="https://www.youtube.com/watch?v=HlXAeOnU520"> Ethnocentrism by Khan Academy </a></button></p>
@@ -71,9 +58,9 @@
                   <div class="text-primary"><i class="pb-3 fas fa-newspaper fa-3x"></i>
                     <p class="font-weight-bold text-black">Articles</p>
                   </div>
-                  <p><a href="https://explorable.com/ethnocentrism">Ethnocentrism</a></p>
-                  <p><a href="https://theconversation.com/oxford-style-debate-ethno-nationalism-and-systemic-crisis-are-symptoms-of-the-present-104040"> Ethno-nationalism and systemic crisis are symptoms of the present</a></p>
-                  <p><a href="http://www.diversityjournal.com/9336-the-argument-for-ethnocentrism/"> The Argument for Ethnocentrism</a></p><br>
+                  <p><a href="https://explorable.com/ethnocentrism" class="text-black">Ethnocentrism</a></p>
+                  <p><a href="https://theconversation.com/oxford-style-debate-ethno-nationalism-and-systemic-crisis-are-symptoms-of-the-present-104040" class="text-black"> Ethno-nationalism and systemic crisis are symptoms of the present</a></p>
+                  <p><a href="http://www.diversityjournal.com/9336-the-argument-for-ethnocentrism/" class="text-black"> The Argument for Ethnocentrism</a><br><br></p>
                 </div>
               </div>
             </div>
@@ -119,12 +106,5 @@
   <div id="scrolltop">
     <button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
   </div>
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/ekko-lightbox.min.js"></script>
-  <script src="scripts/main.js"></script>
-</body>
-</html>
+
+{% endblock %}
