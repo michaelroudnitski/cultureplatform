@@ -1,122 +1,186 @@
 {% extends 'base.html'%}
 
 {% block body %}
-<header>
-  <div class="container pt-4">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="navbar-brand" href="#">Apprendre</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav"
-        aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-          class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="{% url 'learn' %}">Learn</a></li>
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="#trending">Categories</a></li>
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="#discuss">Discuss</a></li>
-          <!-- {% if not user.is_authenticated %} -->
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="#">-</a></li>
-          <li class="nav-item"><a class="nav-link smooth-scroll" href="{% url 'users/signin' %}">Login/Sign Up</a></li>
-          <!-- {% endif %} -->
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="da-home-page-text" data-aos="fade-right" data-aos-duration="1000">
-    <div class="container pt-0">
-      <div class="col-md-10 col-sm-12 px-0 mx-0">
-        <h3 class="display-4 text-green-muted" style="margin-left:-6px;">Interculturality <br>and Ethnocentrism</h2>
-          <h3 class="h5 mt-3 text-primary"><i>Open minded individuals discussing issues of the world</i></h3><a
-            class="smooth-scroll btn btn-outline-light mt-4" href="learn.html">Learn More</a>
-      </div>
+    <header>
+      <div class="container pt-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="navbar-brand" href="#">Apprendre</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="/learn/">Learn</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#trending">Categories</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#discuss">Discuss</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="#">-</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll" href="login.html">Login/Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </div>
-</header>
-<div class="page-content">
-  <!-- CAROUSEL -->
-  <div class="da-section da-brand bg-light pb-6" id="trending">
-    <div class="container text-center ">
-      <div class="h3 pb-2 text-center" data-aos="fade-up">Trending Topics</div>
-      <div class="carousel slide pb-5" id="da-brand-carouselIndicator" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#da-brand-carouselIndicator" data-slide-to="0"></li>
-          <li data-target="#da-brand-carouselIndicator" data-slide-to="1"></li>
-          <li data-target="#da-brand-carouselIndicator" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <p>"..consciousness is a spectrum, it is not black-and-white. I think the pain that animals endure is
-                  close to or even just as real as that felt by humans.."</p>
-                <div class="h6 text-uppercase text-green-muted">Is it ethical to eat meat? </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <p>"The intentional killing of another person is wrong. I think our death penalty system has been, by
-                  all measures, a failure."</p>
-                <div class="h6 text-uppercase text-green-muted">Should the Death Penalty Be Allowed?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <p>"I feel as though it is very offensive to use Native American names and mascots. The names of the
-                  teams shouldn’t reflect a certain culture.."</p>
-                <div class="h6 text-uppercase text-green-muted">Is it offensive sports teams to Use Native American
-                  names?</div>
-              </div>
-            </div>
-          </div>
+    <div class="da-home-page-text" data-aos="fade-right" data-aos-duration="1000">
+      <div class="container pt-0">
+        <div class="col-md-10 col-sm-12 px-0 mx-0">
+          <h3 class="display-4 text-green-muted" style="margin-left:-6px;">Interculturality <br>and Ethnocentrism</h2>
+          <h3 class="h5 mt-3 text-primary"><i>Open minded individuals discussing issues of the world</i></h3><a class="smooth-scroll btn btn-outline-light mt-4" href="learn.html">Learn More</a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="da-section bg-light pt-0">
-    <div class="da-services">
+  </header>
+  <div class="page-content">
+    <!-- CAROUSEL -->
+    <div class="da-section da-brand bg-light pb-6" id="trending">
       <div class="container text-center ">
-        <div class="h3 pb-5 text-center" data-aos="fade-up">Categories</div>
+        <div class="h3 pb-2 text-center" data-aos="fade-up">Trending Topics</div>
+        <div class="carousel slide pb-5" id="da-brand-carouselIndicator" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#da-brand-carouselIndicator" data-slide-to="0"></li>
+            <li data-target="#da-brand-carouselIndicator" data-slide-to="1"></li>
+            <li data-target="#da-brand-carouselIndicator" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <p>"..consciousness is a spectrum, it is not black-and-white. I think the pain that animals endure is close to or even just as real as that felt by humans.."</p>
+                  <div class="h6 text-uppercase text-green-muted">Is it ethical to eat meat? </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <p>"The intentional killing of another person is wrong. I think our death penalty system has been, by all measures, a failure."</p>
+                  <div class="h6 text-uppercase text-green-muted">Should the Death Penalty Be Allowed?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <p>"I feel as though it is very offensive to use Native American names and mascots. The names of the teams shouldn’t reflect a certain culture.."</p>
+                  <div class="h6 text-uppercase text-green-muted">Is it offensive to Use Native American names for sport teams?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="da-section bg-light pt-0">
+      <div class="da-services">
+        <div class="container text-center ">
+          <div class="h3 pb-5 text-center" data-aos="fade-up">Categories</div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="500">
+                  <div class="text-primary"><i class="pb-3 fas fa-globe fa-3x"></i>
+                    <p class="font-weight-bold">Culture and Diversity</p>
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="text-primary"><i class="pb-3 fas fa-brain fa-3x"></i>
+                    <p class="font-weight-bold">Philosophy and Ethics</p>
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1500">
+                  <div class="text-primary"><i class="pb-3 fas fa-comments fa-3x"></i>
+                    <p class="font-weight-bold">Mental Health</p>
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card mb-3">
+                <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="2000">
+                  <div class="text-primary"><i class="pb-3 fas fa-random fa-3x"></i>
+                    <p class="font-weight-bold">Miscellaneous</p>
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- DISCUSS -->
+    <div class="da-section da-work bg-secondary pb-3" id="discuss">
+      <div class="container">
+        <div class="h3 pb-3 text-center text-white" data-aos="fade-up">Create a Topic</div>
+        <p class="px-5 pb-5 text-center text-white" data-aos="fade-up">Start your own debate! Pick a topic and spark conversation with open-minded individuals from across the world.</p>
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="card mb-3">
-              <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="500">
-                <div class="text-primary"><i class="pb-3 fas fa-globe fa-3x"></i>
-                  <p class="font-weight-bold">Culture and Diversity</p>
-                </div>
-                <p></p>
+          <div class="col-md-4">
+            <div class="card mb-3" data-aos="flip-left">
+              <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fab fa-buromobelexperte fa-3x"></i>
+                <div class="h4 pb-4"><a class="nav-link text-primary" href="create.html">Choose a topic</a></div>
+                <p>Choose a topic that you want to talk or learn about! Browse on-going and archived topics for inspiration.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card mb-3">
-              <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="text-primary"><i class="pb-3 fas fa-brain fa-3x"></i>
-                  <p class="font-weight-bold">Philosophy and Ethics</p>
-                </div>
-                <p></p>
+          <div class="col-md-4">
+            <div class="card mb-3" data-aos="zoom-in-up">
+              <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-user-graduate fa-3x"></i>
+                <div class="h4 pb-5">Request or Invite an Expert</div>
+                <p>Invite a professor or an expert you know for a different perspective. Can't think of anyone? Request an expert!</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card mb-3">
-              <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1500">
-                <div class="text-primary"><i class="pb-3 fas fa-comments fa-3x"></i>
-                  <p class="font-weight-bold">Mental Health</p>
-                </div>
-                <p></p>
+          <div class="col-md-4">
+            <div class="card mb-3" data-aos="flip-right">
+              <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-upload fa-3x"></i>
+                <div class="h4 pb-5">Setup a Video Conference</div>
+                <p>Schedule a video conference and discuss your topic during the conference and in the comments!</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card mb-3">
-              <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="2000">
-                <div class="text-primary"><i class="pb-3 fas fa-random fa-3x"></i>
-                  <p class="font-weight-bold">Miscellaneous</p>
-                </div>
-                <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="da-section bg-secondary text-white">
+      <div class="container">
+        <div class="row px-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-clipboard-check  fa-3x fa-fw"></i>
+              <div class="media-body">
+                <div class="h5">1,575</div>
+                <div class="h6">Topics</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
+              <div class="media-body">
+                <div class="h5">865</div>
+                <div class="h6">On-going Topics</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-smile  fa-3x fa-fw"></i>
+              <div class="media-body">
+                <div class="h5">2,267</div>
+                <div class="h6">Active User</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-user-alt fa-3x fa-fw"></i>
+              <div class="media-body">
+                <div class="h5">583</div>
+                <div class="h6">Active Experts</div>
               </div>
             </div>
           </div>
@@ -124,82 +188,6 @@
       </div>
     </div>
   </div>
-
-  <!-- DISCUSS -->
-  <div class="da-section da-work bg-secondary pb-3" id="discuss">
-    <div class="container">
-      <div class="h3 pb-3 text-center text-white" data-aos="fade-up">Create a Topic</div>
-      <p class="px-5 pb-5 text-center text-white" data-aos="fade-up">Start your own debate! Pick a topic and spark
-        conversation with open-minded individuals from across the world.</p>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-3" data-aos="flip-left">
-            <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fab fa-buromobelexperte fa-3x"></i>
-              <div class="h4 pb-4"><a class="nav-link text-primary" href="create.html">Choose a topic</a></div>
-              <p>Choose a topic that you want to talk or learn about! Browse on-going and archived topics for
-                inspiration.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-3" data-aos="zoom-in-up">
-            <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-user-graduate fa-3x"></i>
-              <div class="h4 pb-5">Request or Invite an Expert</div>
-              <p>Invite a professor or an expert you know for a different perspective. Can't think of anyone? Request an
-                expert!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-3" data-aos="flip-right">
-            <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-upload fa-3x"></i>
-              <div class="h4 pb-5">Setup a Video Conference</div>
-              <p>Schedule a video conference and discuss your topic during the conference and in the comments!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="da-section bg-secondary text-white">
-    <div class="container">
-      <div class="row px-4">
-        <div class="col-md-3 col-sm-6">
-          <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-clipboard-check  fa-3x fa-fw"></i>
-            <div class="media-body">
-              <div class="h5">1,575</div>
-              <div class="h6">Topics</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
-            <div class="media-body">
-              <div class="h5">865</div>
-              <div class="h6">On-going Topics</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-smile  fa-3x fa-fw"></i>
-            <div class="media-body">
-              <div class="h5">2,267</div>
-              <div class="h6">Active User</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-user-alt fa-3x fa-fw"></i>
-            <div class="media-body">
-              <div class="h5">583</div>
-              <div class="h6">Active Experts</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 <footer class="bg-light da-section">
   <div class="container">
