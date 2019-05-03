@@ -8,7 +8,7 @@ def forum(request):
     return render(request, 'forum.html')
 
 
-# @login_required()
+# @login_required(login_url='/accounts/signin/)
 def create(request):
     if request.method == 'POST':
         form = NewForumForm(request.POST)
