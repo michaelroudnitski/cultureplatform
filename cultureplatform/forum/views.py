@@ -38,3 +38,6 @@ def mental_health(request):
 
 def miscellaneous(request):
     return render(request, 'miscellaneous.html')
+
+def liveforum(request):
+    return render(request, 'content-example.html')
