@@ -572,6 +572,10 @@ pre code {
   margin-left: auto;
 }
 
+.blackbg {
+  background-color: #000 !important; 
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
