@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from .forms import NewForumForm
+from django.http import HttpResponse
 
 def forum(request):
     return render(request, 'forum.html')
@@ -20,3 +21,19 @@ def create(request):
     else:
         form = NewForumForm()
     return render(request, 'createforum.html', {'form': form})
+
+
+def cultural_and_diversity(request, id):
+    return HttpResponse("cultural diversity")
+
+
+def philosophy_and_ethics(request, id):
+    return HttpResponse("philosophy_and_ethics")
+
+
+def mental_health(request, id):
+    return HttpResponse("mental_health")
+
+
+def miscellaneous(request, id):
+    return HttpResponse("miscellaneous")
