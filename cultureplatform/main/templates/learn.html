@@ -1,6 +1,19 @@
-{% extends 'base.html'%}
-
-{% block body %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apprendre</title>
+    <meta name="description" content="A Digital Agency Website landing page template built by TemplateFlip.com"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
+    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body id="top">
       <div class="container pt-4">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand" href="index.html">Apprendre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -15,45 +28,56 @@
         </div>
       </nav>
     </div>
-    
+
 
   <div class="page-content">
     <div class="da-section bg-light" id="services">
       <div class="da-services">
         <div class="container text-center">
-          <div class="h3 pb-5 text-center" data-aos="fade-up">Title</div>
+          <div class="h3 pb-2 text-center" data-aos="fade-up">Interculturality: <br /></div>
+          <p class="font-italic pb-5">Describes a set of multi-faceted processes of interaction through which relations between different cultures are constructed, aiming to enable groups and individuals to forge links between cultures based on equity and mutual respect.</p>
+
+          <div class="h3 pb-2 text-center" data-aos="fade-up">Ethnocentrism: <br /></div>
+          <p class="font-italic  pb-5">The concept of evaluating other cultures according to preconceptions originating in the standards of one's own culture.</p>
+
           <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
               <div class="card mb-3">
                 <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="500">
-                  <div class="text-primary"><i class="pb-3 fas fa-code fa-3x"></i>
-                    <p class="font-weight-bold">Subtitle</p>
+                  <div class="text-primary"><i class="pb-3 fas fa-book fa-3x"></i>
+                    <p class="font-weight-bold text-black">Books</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+                  <p> &#8226; Ethnocentrism: Integrated Perspectives by Boris Bizumic (2018) <br /> ISBN: 9781317284628</p>
+                  <p> &#8226; The Authoritarian Personality by Theodor W. Adorno (1950) <br /> ISBN: 9788824505321</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card mb-3">
+            <div class="col-lg-4 col-md-6">
+              <div class="card mb-4">
                 <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1000">
-                  <div class="text-primary"><i class="pb-3 fab fa-buromobelexperte fa-3x"></i>
-                    <p class="font-weight-bold">Subtitle</p>
+                  <div class="text-primary"><i class="pb-3 fas fa-video fa-3x"></i>
+                    <p class="font-weight-bold text-black">Videos</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+                  <p><button type="button" class="btn btn-outline-primary"><a href="https://www.youtube.com/watch?v=HlXAeOnU520"> Ethnocentrism by Khan Academy </a></button></p>
+                  <p><button type="button" class="btn btn-outline-primary"><a href="https://www.youtube.com/watch?v=c_YFdX2m0mE"> Intro to Sociology By NYU </a></button></p>
+                  <p><button type="button" class="btn btn-outline-primary"><a href="https://www.youtube.com/watch?v=wlyS4zrklww"> Examples by FunSimpleLife </a></button><br></p>
+
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card mb-3">
+            <div class="col-lg-4 col-md-6">
+              <div class="card mb-0">
                 <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1500">
-                  <div class="text-primary"><i class="pb-3 fas fa-cubes fa-3x"></i>
-                    <p class="font-weight-bold">Subtitle</p>
+                  <div class="text-primary"><i class="pb-3 fas fa-newspaper fa-3x"></i>
+                    <p class="font-weight-bold text-black">Articles</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+                  <p><a href="https://explorable.com/ethnocentrism">Ethnocentrism</a></p>
+                  <p><a href="https://theconversation.com/oxford-style-debate-ethno-nationalism-and-systemic-crisis-are-symptoms-of-the-present-104040"> Ethno-nationalism and systemic crisis are symptoms of the present</a></p>
+                  <p><a href="http://www.diversityjournal.com/9336-the-argument-for-ethnocentrism/"> The Argument for Ethnocentrism</a></p><br>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
               <div class="card mb-3">
                 <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="2000">
                   <div class="text-primary"><i class="pb-3 fas fa-eye fa-3x"></i>
@@ -62,7 +86,7 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -95,5 +119,12 @@
   <div id="scrolltop">
     <button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
   </div>
-
-{% endblock %}
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ekko-lightbox.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
