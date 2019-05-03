@@ -6,12 +6,12 @@ from django.db import models
 class Forum(models.Model):
     title = models.CharField(max_length=30)
     date_posted = models.DateField()
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    # owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
 class Comment(models.Model):
     content = models.TextField()
     date_posted = models.DateField()
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    # owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
 class Video(models.Model):
     videoID = models.CharField(max_length=300)
