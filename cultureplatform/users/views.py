@@ -14,9 +14,9 @@ def signup(request):
                                 password=uf.cleaned_data['password1'],)
             if user is not None:
                 login(request, user)
-                userprofile = Profile(user=user, year=1)
-                userprofile.save()
-                return redirect('edit_profile')
+                # userprofile = Profile(user=user, year=1)
+                # userprofile.save()
+                return redirect('/')
     else:
         uf = UserRegistrationForm()
     return render(request, 'accounts/signup.html', {'userform': uf})
@@ -45,7 +45,7 @@ def signin(request):
                                 password=cd['password'])
             if user is not None:
                 login(request, user)
-                return redirect('index')
+                return redirect('/')
             else:
                 return render(request, 'accounts/signin.html', {'loginForm': loginForm,
                                                         'error_message': 'Your username and password did not match our records'})
