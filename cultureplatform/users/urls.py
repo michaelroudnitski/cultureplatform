@@ -4,7 +4,10 @@ from django.contrib.auth import views as auth_views
 from . import views
 
 urlpatterns = [
-    # url('login', LoginView.as_view(template_name='login.html'), name="login"),
-    url('login', views.login, name='login'),
     url('signup', views.signup, name='signup'),
+    url('signin', views.signin, name='signin'),
+    url('edit-profile', views.edit_profile, name='edit_profile'),
+    url('signout', views.signout, name='signout'),
+    url('password-change', auth_views.PasswordChangeView.as_view(), name='password_change'),
+    url('password-change/done', auth_views.PasswordResetCompleteView .as_view(), name='password_change_done'),
 ]
